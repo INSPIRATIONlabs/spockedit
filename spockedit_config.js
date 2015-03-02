@@ -22,4 +22,5 @@ CKEDITOR.editorConfig = function( config )
         { name : 'Preformatted Text', element : 'pre' },
   ];
   config.removePlugins = 'iframe';
+  config.templates_files = [ '/sites/all/modules/spockedit/spockedit_templates.js'];
 }
