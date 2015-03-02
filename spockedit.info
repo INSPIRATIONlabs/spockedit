@@ -1,0 +1,4 @@
+name = SPOckedit
+description = better ckeditor integration with wysiwyg module and custom default configurations
+package = INSPIRATIONlabs
+core = 7.x
