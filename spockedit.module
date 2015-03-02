@@ -63,8 +63,12 @@ function spockedit_wysiwyg_editor_settings_alter(&$settings, $context) {
   // In this case we just need to check that the editor being used is ckeditor
   if ($context['profile']->editor == 'ckeditor') {
 
+    $url = variable_get('spockedit_ck_config_url');
+    if(!$url) {
+      $url = SPOCKEDIT_CONFIG_JS;
+    }
     // Specify the custom config file that defines our font styles
-    $settings['customConfig'] = variable_get('spockedit_ck_config_url', SPOCKEDIT_CONFIG_JS);
+    $settings['customConfig'] = $url;
 
     // We are also going to specify a custom body id and class
     $settings['bodyId'] = 'spockedit_custom_id';
