@@ -24,8 +24,6 @@ function spockedit_form($form) {
     '#type' => 'textfield',
     '#title' => t('URL to config.js'),
     '#default_value' => variable_get('spockedit_ck_config_url'),
-    '#size' => ,
-    '#maxlength' => 2,
     '#description' => t('URL to <a href="'.variable_get('spockedit_ck_config_url', SPOCKEDIT_CONFIG_JS).'">config.js</a> for ckeditor. If not set, the following file will be used: <a href="'.SPOCKEDIT_CONFIG_JS.'">'.SPOCKEDIT_CONFIG_JS.'</a>.'),
     '#required' => FALSE,
   );
