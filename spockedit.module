@@ -1,6 +1,6 @@
 <?php
 
-define(SPOCKEDIT_CONFIG_JS, base_path() . drupal_get_path('module', 'spockedit') . '/spockedit_config.js');
+define('SPOCKEDIT_CONFIG_JS', base_path() . drupal_get_path('module', 'spockedit') . '/spockedit_config.js');
 
 function spockedit_menu() {
   $items = array();
